@@ -1,0 +1,7 @@
+locale:
+  language: english
+  # TODO: If you want Korean locale, you can customize:
+  # language: korean
+  # last_updated: 최종 업데이트
+  # present: 현재
+  # etc.

@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.4/schema.json
+# Personal CV file - based on my_resume.md
+# This file is separate from the original repo examples to avoid sync conflicts
+
+cv:
+  name: Jinwon Kim
+  headline: Robotics Engineer
+  location: Seoul, South Korea
+  email: mqjinwon@gmail.com
+  phone: +82-10-5068-7329
+  website: https://mqjinwon.github.io
+  photo: 
+  social_networks:
+    - network: LinkedIn
+      username: robotics-jinwon
+    - network: GitHub
+      username: mqjinwon
+
+  sections:
+    summary:
+      - bullet: 3+ years of robotics engineering experience with proven track record in national R&D projects (ADD, NIPA, IITP, COMPA, KOITA, GERI), delivering production-grade solutions from concept to deployment.
+      - bullet: Full-stack robotics engineer specializing in perception, control, and system integration with hands-on experience building and deploying real-world robotic systems that bridge hardware and software.
+      - bullet: Engineering-driven problem solver who delivers reliable, production-oriented code aligned with business goals, comfortable owning complex technical challenges end-to-end.
+
+    experience:
+      - company: "[Korea Robot Manufacturing](https://www.krm.co.kr/)"
+        position: Robotics Engineer (Robot-Intelligence Team Lead)
+        start_date: 2023-05
+        end_date: present
+        highlights:
+          - Navigation for Quadruped robot
+          - Simultaneous Localization and Mapping (SLAM)
+
+      - company: "[Korea Institute of Science and Technology](https://www.kist.re.kr/)"
+        position: Student Researcher
+        start_date: 2019-05
+        end_date: 2019-12
+        highlights:
+          - Designed and implemented a data collection pipeline using crawling to acquire 1,000 annotated images of objects in various environments
+          - Developed object detection and tracking algorithms using YOLOv3 and Siamese network
+          - Published KRoC paper and Registered patent
+
+    education:
+      - institution: Korea University
+        area: Computer Science
+        degree: PhD
+        start_date: 2025-09
+        end_date: present
+        location: Seoul, South Korea
+        highlights:
+          - Reseach area:VLM, RL, Quadruped robot
+
+      - institution: Korea Advanced Institute of Science and Technology
+        area: Robotics
+        degree: MS
+        start_date: 2021-03
+        end_date: 2023-02
+        location: Daejeon, South Korea
+        summary: Master's in Robotics Program at Scalable Graphics, Vision, and Robotics Lab
+        highlights:
+          - Track:Reinforcement Learning, Deep Learning, Intelligent Robotics
+          - GPA:3.65 / 4.3
+
+      - institution: Kwangwoon University
+        area: Division of Robotics
+        degree: BS
+        start_date: 2017-03
+        end_date: 2021-02
+        location: Seoul, South Korea
+        highlights:
+          - Track:Robot Control, Robot Navigation, Computer Vision
+          - GPA:4.23 / 4.5
+
+    publications:
+      - title: Collision-Backpropagation based Obstacle Avoidance Method for a Legged Robot Expressed as a Simplified Dynamics Model
+        authors:
+          - "*Jinwon Kim*"
+          - Heechan Shin
+          - S. Y.
+        journal: International Conference on Control, Automation and Systems (ICCAS 2022), BEXCO, Busan, Korea
+        date: "2022"
+        summary: Proposed an obstacle avoidance algorithm for legged robots, expressed as a simplified dynamics model, and demonstrated an improvement of up to 15.89 times in the probability of collision-free trajectory planning
+
+      - title: Collision Backpropagation-based Obstacle Avoidance Method for a Legged Robot with Simplified Dynamics Model
+        authors:
+          - "*Jinwon Kim*"
+          - Heechan Shin
+          - S. Y.
+        journal: Korea Robotics Society Annual Conference (KRoC 2022), Pyeongchang, Korea
+        date: "2022"
+        summary: Proposed an obstacle avoidance algorithm for legged robots, expressed as a simplified dynamics model, and demonstrated an improvement in the probability of collision-free trajectory planning
+
+      - title: "Robust Multi Object Detection Using Siamese Network"
+        authors:
+          - "*Jinwon Kim*"
+          - KangGeon Kim
+        journal: Korea Robotics Society Annual Conference (KRoC 2020), Pyeongchang, Korea
+        date: "2020"
+        summary: Proposed a real-time robust multi object detection method using Siamese network to improve the object detection performance
+
+    patents:
+      - title: Robust Multi-object Detection Apparatus and Method Using Siamese Network
+        number: KR-Application No. 10-2020-0026298
+        date: 2020
+        authors:
+          - KangGeon Kim
+          - Jinwon Kim
+        highlights: 
+          - Proposed a real-time robust multi object detection method using Siamese network to improve the object detection performance
+
+    projects:
+      - name: Development of Quadrupedal Robot System Technology for Monitoring, Reconnaissance, and Search Missions
+        start_date: 2021-03
+        end_date: 2023-01
+        location: Agency for Defense Development (ADD)
+        summary: National defense research project
+        highlights:
+          - Generated the initial trajectory for trajectory optimization using a deep learning network, resulting in a speedup of up to 100 times
+
+    activities:
+      - name: Auturbo
+        start_date: 2023-03
+        end_date: present
+        summary: Quadruped Robot Team leader (Mar 2024 – ongoing), Regular Member (Mar 2023 – Dec 2023)
+        highlights:
+          - Developing StrideSim - A Quadruped Robot Simulation using IsaacSim
+
+      - name: BARAM, Kwangwoon University
+        start_date: 2018-03
+        end_date: 2021-02
+        location: Seoul, South Korea
+        summary: Vice President (Jan 2019 – Dec 2019), Regular Member (Mar 2018 – Dec 2018, Jan 2020 – Feb 2021)
+        highlights:
+          - Represented over 60 active members as an elected by members
+          - Created and showcased six robotic pieces
+
+    honors:
+      - bullet: Military Robotics Society Excellence Award (Dec 2025)
+      - bullet: Open SW mini hackathon 3rd Prize (Nov 2020)
+      - bullet: Dean's list (Dec 2020, Jun 2019, Dec 2018)
+
+    skills:
+      - label: Programming Languages
+        details: C++, Python, LaTeX
+      - label: Frameworks & Tools
+        details: ROS, PyTorch, CasADi
+      - label: Language Fluency
+        details: Intermediate high in English (TOEIC 810, OPIc IH), Native in Korean
+
+
+settings:
+  current_date: '2025-12-22'
+  render_command:
+    design: ./design.yaml
+    locale: ./locale.yaml
+    typst_path: resume.typ
+    pdf_path: resume.pdf
+    markdown_path: resume.md
+    html_path: resume.html
+    png_path: resume.png
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: 
+    - "Jinwon Kim"
