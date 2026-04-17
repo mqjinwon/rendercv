@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.4/schema.json
-# Personal CV file
-# This file is separate from the original repo examples to avoid sync conflicts
+# Short version — 2-page resume optimized for industry applications and ATS scans
+# Full version: main.yaml
 
 cv:
   name: Jinwon Kim
@@ -31,10 +31,9 @@ cv:
         end_date: present
         highlights:
           - Led 3-5 engineers on autonomous navigation for quadruped robots (Vision 60)
-          - Wrote and deployed the full autonomy stack on Jetson Orin with ROS 2, covering SLAM (GLIM), localization (DLIO), path planning (Nav2 + MPPI), and mission execution (Behavior Tree)
-          - Designed ROUTE, a graph-based mission system with plugin architecture for patrol. Supports per-node tasks like PTZ surveillance, docking, and gait switching
+          - Deployed full autonomy stack on Jetson Orin / ROS 2 — GLIM (SLAM), DLIO (localization), Nav2+MPPI (planning), Behavior Tree (missions)
+          - Designed ROUTE — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
           - Built PACE (Parameter Actuator Calibration Engine) for MuJoCo sim-to-real transfer. Joint dynamics error under 5% NRMSE via CMA-ES
-          - 2 papers as corresponding author (ICCAS 2025, KRoC 2026); 1 patent filed on robot path planning
           - Contributed to 3 government-funded R&D projects (IITP, NIPA, defense cluster)
 
       - company: "[Korea Institute of Science and Technology](https://www.kist.re.kr/)"
@@ -55,6 +54,7 @@ cv:
         location: Seoul, South Korea
         highlights:
           - "Research: VLM-based robot autonomy, reinforcement learning for quadruped locomotion"
+          - "Part-time enrollment, sponsored by Korea Robot Manufacturing"
 
       - institution: Korea Advanced Institute of Science and Technology
         area: Robotics
@@ -73,7 +73,6 @@ cv:
         end_date: 2021-02
         location: Seoul, South Korea
         highlights:
-          - "Focus: Robot Control, Navigation, Computer Vision"
           - "GPA: 4.23 / 4.5"
 
     publications:
@@ -107,21 +106,6 @@ cv:
         date: "2022"
         summary: Obstacle avoidance for legged robots via simplified dynamics. Collision-free trajectory probability improved up to 15.89x
 
-      - title: Collision Backpropagation-based Obstacle Avoidance Method for a Legged Robot with Simplified Dynamics Model
-        authors:
-          - "*Jinwon Kim*"
-          - Heechan Shin
-          - Sung-eui Yoon
-        journal: Korea Robotics Society Annual Conference (KRoC 2022), Pyeongchang, Korea
-        date: "2022"
-
-      - title: "Robust Multi Object Detection Using Siamese Network"
-        authors:
-          - "*Jinwon Kim*"
-          - KangGeon Kim
-        journal: Korea Robotics Society Annual Conference (KRoC 2020), Pyeongchang, Korea
-        date: "2020"
-
     patents:
       - title: Robot Path Control Apparatus and Method for Determining Movement Path Considering Obstacles
         number: KR-Application No. 10-2024-0182720
@@ -141,15 +125,6 @@ cv:
           - Registered (Oct 2022)
 
     projects:
-      - name: Quadruped Robot Autonomous Navigation Full-Stack System
-        start_date: 2024-12
-        end_date: 2026-01
-        location: Korea Robot Manufacturing
-        summary: "Team lead — SLAM, localization, planning, and ROUTE mission system for Vision 60"
-        highlights:
-          - Ran GLIM SLAM, DLIO localization, Nav2+MPPI planning, and ROUTE missions on Jetson Orin with ROS 2 Jazzy
-          - ROUTE plugin architecture supports per-edge cost functions and per-node mission actions (acoustic camera, detection, PTZ)
-
       - name: Sim-to-Real Pipeline for Quadruped Robot (FuRo)
         start_date: 2025-12
         end_date: present
@@ -175,20 +150,11 @@ cv:
         highlights:
           - "Building [StrideSim](https://github.com/AuTURBO/StrideSim), a quadruped robot simulation platform on IsaacSim"
 
-      - name: BARAM, Kwangwoon University
-        start_date: 2018-03
-        end_date: 2021-02
-        location: Seoul, South Korea
-        summary: Vice President (2019), Regular Member (2018, 2020-2021)
-        highlights:
-          - Elected vice president over 60+ members; built and exhibited 6 robotic projects
-
     honors:
       - bullet: Military Robotics Society Excellence Award (Dec 2025)
       - bullet: Military Robotics Society Excellence Poster Award (Nov 2024)
       - bullet: "Ministry of National Defense Drone-Bot Challenge: Grand Prize, 2 consecutive years (2023, 2024)"
-      - bullet: Open SW Mini Hackathon 3rd Prize (Nov 2020)
-      - bullet: Dean's List (Dec 2020, Jun 2019, Dec 2018)
+      - bullet: Dean's List (2020, 2019, 2018)
 
     skills:
       - label: Programming Languages
@@ -208,11 +174,11 @@ settings:
   render_command:
     design: ./design.yaml
     locale: ./locale.yaml
-    typst_path: resume-full.typ
-    pdf_path: resume-full.pdf
-    markdown_path: resume-full.md
-    html_path: resume-full.html
-    png_path: resume-full.png
+    typst_path: resume.typ
+    pdf_path: resume.pdf
+    markdown_path: resume.md
+    html_path: resume.html
+    png_path: resume.png
     dont_generate_markdown: true
     dont_generate_html: true
     dont_generate_typst: false
