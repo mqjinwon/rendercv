@@ -1,28 +1,30 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
-  name: "#strong[Jinwon Kim]",
-  footer: context { [#emph[#strong\[]#emph[Jinwon Kim]#emph[\] -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Dec 2025] ],
+  name: "Jinwon Kim",
+  title: "Jinwon Kim - CV",
+  footer: context { [#emph[#str(here().page()) \/ #str(counter(page).final().first())]] },
+  top-note: [ #emph[Last updated in Apr 2026] ],
   locale-catalog-language: "en",
+  text-direction: ltr,
   page-size: "a4",
-  page-top-margin: 0.7in,
-  page-bottom-margin: 0.7in,
-  page-left-margin: 0.7in,
-  page-right-margin: 0.7in,
+  page-top-margin: 0.6in,
+  page-bottom-margin: 0.6in,
+  page-left-margin: 0.65in,
+  page-right-margin: 0.65in,
   page-show-footer: true,
   page-show-top-note: true,
-  colors-body: rgb(0, 0, 0),
-  colors-name: rgb(0, 79, 144),
-  colors-headline: rgb(0, 79, 144),
-  colors-connections: rgb(0, 79, 144),
-  colors-section-titles: rgb(0, 79, 144),
-  colors-links: rgb(0, 79, 144),
-  colors-footer: rgb(128, 128, 128),
-  colors-top-note: rgb(128, 128, 128),
-  typography-line-spacing: 0.6em,
+  colors-body: rgb(30, 30, 30),
+  colors-name: rgb(25, 42, 86),
+  colors-headline: rgb(25, 42, 86),
+  colors-connections: rgb(60, 60, 60),
+  colors-section-titles: rgb(25, 42, 86),
+  colors-links: rgb(25, 42, 86),
+  colors-footer: rgb(140, 140, 140),
+  colors-top-note: rgb(140, 140, 140),
+  typography-line-spacing: 0.65em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
   typography-font-family-body: "Source Sans 3",
@@ -31,14 +33,14 @@
   typography-font-family-connections: "Source Sans 3",
   typography-font-family-section-titles: "Source Sans 3",
   typography-font-size-body: 10pt,
-  typography-font-size-name: 30pt,
+  typography-font-size-name: 28pt,
   typography-font-size-headline: 10pt,
-  typography-font-size-connections: 10pt,
-  typography-font-size-section-titles: 1.4em,
+  typography-font-size-connections: 9pt,
+  typography-font-size-section-titles: 1.3em,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
-  typography-small-caps-section-titles: false,
+  typography-small-caps-section-titles: true,
   typography-bold-name: true,
   typography-bold-headline: false,
   typography-bold-connections: false,
@@ -47,26 +49,27 @@
   links-show-external-link-icon: true,
   header-alignment: center,
   header-photo-width: 3.5cm,
-  header-space-below-name: 0.7cm,
-  header-space-below-headline: 0.7cm,
-  header-space-below-connections: 0.7cm,
+  header-space-below-name: 0.5cm,
+  header-space-below-headline: 0.5cm,
+  header-space-below-connections: 0.5cm,
   header-connections-hyperlink: true,
   header-connections-show-icons: true,
   header-connections-display-urls-instead-of-usernames: false,
   header-connections-separator: "",
   header-connections-space-between-connections: 0.5cm,
-  section-titles-type: "with_partial_line",
-  section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.5cm,
-  section-titles-space-below: 0.3cm,
+  section-titles-type: "with_full_line",
+  section-titles-line-thickness: 0.6pt,
+  section-titles-space-above: 0.45cm,
+  section-titles-space-below: 0.25cm,
   sections-allow-page-break: true,
   sections-space-between-text-based-entries: 0.3em,
-  sections-space-between-regular-entries: 1.2em,
+  sections-space-between-regular-entries: 1.0em,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0.2cm,
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
   entries-short-second-row: true,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
   entries-summary-space-above: 0cm,
   entries-highlights-bullet:  "•" ,
@@ -76,9 +79,9 @@
   entries-highlights-space-between-items: 0cm,
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
-    year: 2025,
-    month: 12,
-    day: 22,
+    year: 2026,
+    month: 4,
+    day: 17,
   ),
 )
 
@@ -86,7 +89,7 @@
 = #strong[Jinwon Kim]
 
   #headline([Robotics Engineer])
-  
+
 #connections(
   [#connection-with-icon("location-dot")[Seoul, South Korea]],
   [#link("mailto:mqjinwon@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[mqjinwon\@gmail.com]]],
@@ -94,52 +97,63 @@
   [#link("https://mqjinwon.github.io/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[mqjinwon.github.io]]],
   [#link("https://linkedin.com/in/robotics-jinwon", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[robotics-jinwon]]],
   [#link("https://github.com/mqjinwon", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[mqjinwon]]],
+  [#link("https://scholar.google.com/citations?user=gIG200oAAAAJ", icon: false, if-underline: false, if-color: false)[#connection-with-icon("graduation-cap")[Google Scholar]]],
 )
 
 
 == Summary
 
-- 3+ years of robotics engineering experience with proven track record in national R&D projects (ADD, NIPA, IITP, COMPA, KOITA, GERI), delivering production-grade solutions from concept to deployment.
+- Part-time PhD researcher (company-sponsored, Korea University) on VLM-based robot autonomy and RL for legged locomotion — building sim-to-real pipelines on FuRO with MuJoCo, mjlab, and CMA-ES-based parameter identification (PACE).
 
-- Full-stack robotics engineer specializing in perception, control, and system integration with hands-on experience building and deploying real-world robotic systems that bridge hardware and software.
+- Shipped end-to-end autonomy stack on Vision 60 (SLAM\/GLIM, DLIO localization, Nav2+MPPI planning, Behavior Tree missions) as Robot-Intelligence Team Lead at KRM.
 
-- Engineering-driven problem solver who delivers reliable, production-oriented code aligned with business goals, comfortable owning complex technical challenges end-to-end.
+- 3 government-funded R&D programs (IITP, NIPA, defense cluster), 2 corresponding-author papers, 1 filed patent, and Ministry of National Defense Drone-Bot Challenge Grand Prize (2 consecutive years, 2023 & 2024).
 
 == Experience
 
 #regular-entry(
   [
     #strong[#link("https://www.krm.co.kr/")[Korea Robot Manufacturing]], Robotics Engineer (Robot-Intelligence Team Lead)
-    
-    - Navigation for Quadruped robot
-    
-    - Simultaneous Localization and Mapping (SLAM)
-    
+
+    - Led 3-5 engineers on autonomous navigation for quadruped robots (Vision 60)
+
+    - Deployed full autonomy stack on Jetson Orin \/ ROS 2 — GLIM (SLAM), DLIO (localization), Nav2+MPPI (planning), Behavior Tree (missions)
+
+    - Designed ROUTE — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
+
+    - Built PACE (Parameter Actuator Calibration Engine) for MuJoCo sim-to-real transfer. Joint dynamics error under 5\% NRMSE via CMA-ES
+
+    - Contributed to 3 government-funded R&D projects (IITP, NIPA, defense cluster)
+
   ],
   [
     May 2023 – present
+
     
-    2 years 8 months
-    
+
+    3 years
+
   ],
 )
 
 #regular-entry(
   [
     #strong[#link("https://www.kist.re.kr/")[Korea Institute of Science and Technology]], Student Researcher
-    
-    - Designed and implemented a data collection pipeline using crawling to acquire 1,000 annotated images of objects in various environments
-    
-    - Developed object detection and tracking algorithms using YOLOv3 and Siamese network
-    
-    - Published KRoC paper and Registered patent
-    
+
+    - Collected 1,000+ annotated images via web crawling for delivery robot object detection
+
+    - Wrote real-time multi-object detection and tracking with YOLOv3 and Siamese network
+
+    - Published at KRoC 2020; patent registered (KR-10-2020-0026298)
+
   ],
   [
     May 2019 – Dec 2019
+
     
+
     8 months
-    
+
   ],
 )
 
@@ -147,16 +161,18 @@
 
 #education-entry(
   [
-    #strong[Korea University], Computer Science
-    
-    - Reseach area:VLM, RL, Quadruped robot
-    
+    #strong[Korea University], Computer Science and Engineering
+
+    - Research: VLM-based robot autonomy, reinforcement learning for quadruped locomotion
+
+    - Part-time enrollment, sponsored by Korea Robot Manufacturing
+
   ],
   [
     Seoul, South Korea
-    
+
     Sept 2025 – present
-    
+
   ],
   degree-column: [
     #strong[PhD]
@@ -166,19 +182,17 @@
 #education-entry(
   [
     #strong[Korea Advanced Institute of Science and Technology], Robotics
-    
-    #summary[Master's in Robotics Program at Scalable Graphics, Vision, and Robotics Lab]
-    
-    - Track:Reinforcement Learning, Deep Learning, Intelligent Robotics
-    
-    - GPA:3.65 \/ 4.3
-    
+
+    #summary[#link("https://sgvr.kaist.ac.kr/")[Scalable Graphics, Vision, and Robotics Lab] (Advisor: Prof. Sung-eui Yoon)]
+
+    - Focus: Reinforcement Learning, Deep Learning, Intelligent Robotics
+
   ],
   [
     Daejeon, South Korea
-    
+
     Mar 2021 – Feb 2023
-    
+
   ],
   degree-column: [
     #strong[MS]
@@ -188,17 +202,15 @@
 #education-entry(
   [
     #strong[Kwangwoon University], Division of Robotics
-    
-    - Track:Robot Control, Robot Navigation, Computer Vision
-    
-    - GPA:4.23 \/ 4.5
-    
+
+    - GPA: 4.23 \/ 4.5
+
   ],
   [
     Seoul, South Korea
-    
+
     Mar 2017 – Feb 2021
-    
+
   ],
   degree-column: [
     #strong[BS]
@@ -209,46 +221,46 @@
 
 #regular-entry(
   [
+    #strong[Urban Autonomous Robot Navigation via Natural-Language Route Instructions and VLM-Based Situation Understanding]
+
+    Minje Kim, Kyungtae Park, #strong[#emph[Jinwon Kim]]†
+
+    (Korea Robotics Society Annual Conference (KRoC 2026))
+
+  ],
+  [
+    Jan 2026
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[ATBT: Adaptive Topological Map-Based Behavior Tree for Quadruped Robots]
+
+    Woosung Yoon, Junhyeok Choi, Kyungtae Park, Joonghyun Shin, Seungtaek Sung, #strong[#emph[Jinwon Kim]]†
+
+    (International Conference on Control, Automation and Systems (ICCAS 2025))
+
+  ],
+  [
+    Jan 2025
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[Collision-Backpropagation based Obstacle Avoidance Method for a Legged Robot Expressed as a Simplified Dynamics Model]
-    
-    #strong[#emph[Jinwon Kim]], Heechan Shin, S. Y.
-    
-     (International Conference on Control, Automation and Systems (ICCAS 2022), BEXCO, Busan, Korea)
-    
+
+    #strong[#emph[Jinwon Kim]], Heechan Shin, Sung-eui Yoon
+
+    (International Conference on Control, Automation and Systems (ICCAS 2022), Busan, Korea)
+
   ],
   [
     Jan 2022
-    
-  ],
-)
 
-#regular-entry(
-  [
-    #strong[Collision Backpropagation-based Obstacle Avoidance Method for a Legged Robot with Simplified Dynamics Model]
-    
-    #strong[#emph[Jinwon Kim]], Heechan Shin, S. Y.
-    
-     (Korea Robotics Society Annual Conference (KRoC 2022), Pyeongchang, Korea)
-    
-  ],
-  [
-    Jan 2022
-    
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Robust Multi Object Detection Using Siamese Network]
-    
-    #strong[#emph[Jinwon Kim]], KangGeon Kim
-    
-     (Korea Robotics Society Annual Conference (KRoC 2020), Pyeongchang, Korea)
-    
-  ],
-  [
-    Jan 2020
-    
   ],
 )
 
@@ -256,14 +268,27 @@
 
 #regular-entry(
   [
-    #strong[Robust Multi-object Detection Apparatus and Method Using Siamese Network]
-    
-    KangGeon Kim, #strong[Jinwon Kim]
-    
+    #strong[Robot Path Control Apparatus and Method for Determining Movement Path Considering Obstacles]
+
+    #strong[Jinwon Kim]
+
   ],
   [
-    2020
-    
+    2024
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Robust Multi-object Detection Apparatus and Method Using Siamese Network]
+
+    KangGeon Kim, #strong[Jinwon Kim]
+
+  ],
+  [
+    2022
+
   ],
 )
 
@@ -271,18 +296,37 @@
 
 #regular-entry(
   [
-    #strong[Development of Quadrupedal Robot System Technology for Monitoring, Reconnaissance, and Search Missions]
-    
-    #summary[National defense research project]
-    
-    - Generated the initial trajectory for trajectory optimization using a deep learning network, resulting in a speedup of up to 100 times
-    
+    #strong[Sim-to-Real Pipeline for Quadruped Robot (FuRo)]
+
+    #summary[MuJoCo simulation environment and PACE parameter identification for RL-based locomotion]
+
+    - PACE pipeline identifies 6 physics parameters (armature, damping, frictionloss, kp, kd, latency) from 1kHz real robot data using CMA-ES
+
+    - Set up mjlab-based RL training environment on top of PACE-calibrated dynamics for sim-to-real transfer
+
+  ],
+  [
+    Korea Robot Manufacturing
+
+    Dec 2025 – present
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Quadrupedal Robot System for Defense Monitoring and Reconnaissance]
+
+    #summary[National defense research project (KAIST MS thesis)]
+
+    - Used deep learning to generate initial trajectories for optimization, 100x faster than prior approach
+
   ],
   [
     Agency for Defense Development (ADD)
-    
+
     Mar 2021 – Jan 2023
-    
+
   ],
 )
 
@@ -291,36 +335,15 @@
 #regular-entry(
   [
     #strong[Auturbo]
-    
-    #summary[Quadruped Robot Team leader (Mar 2024 – ongoing), Regular Member (Mar 2023 – Dec 2023)]
-    
-    - Developing StrideSim
-    
-      - A Quadruped Robot Simulation using IsaacSim
-    
+
+    #summary[Quadruped Robot Team Leader (Mar 2024 – present), Regular Member (Mar 2023 – Dec 2023)]
+
+    - Building #link("https://github.com/AuTURBO/StrideSim")[StrideSim], a quadruped robot simulation platform on IsaacSim
+
   ],
   [
     Mar 2023 – present
-    
-  ],
-)
 
-#regular-entry(
-  [
-    #strong[BARAM, Kwangwoon University]
-    
-    #summary[Vice President (Jan 2019 – Dec 2019), Regular Member (Mar 2018 – Dec 2018, Jan 2020 – Feb 2021)]
-    
-    - Represented over 60 active members as an elected by members
-    
-    - Created and showcased six robotic pieces
-    
-  ],
-  [
-    Seoul, South Korea
-    
-    Mar 2018 – Feb 2021
-    
   ],
 )
 
@@ -328,14 +351,20 @@
 
 - Military Robotics Society Excellence Award (Dec 2025)
 
-- Open SW mini hackathon 3rd Prize (Nov 2020)
+- Military Robotics Society Excellence Poster Award (Nov 2024)
 
-- Dean's list (Dec 2020, Jun 2019, Dec 2018)
+- Ministry of National Defense Drone-Bot Challenge: Grand Prize, 2 consecutive years (2023, 2024)
+
+- Dean's List (2020, 2019, 2018)
 
 == Skills
 
-#strong[Programming Languages:] C++, Python, LaTeX
+#strong[Programming Languages:] C++, Python
 
-#strong[Frameworks & Tools:] ROS, PyTorch, CasADi
+#strong[Robotics & Navigation:] ROS 2, Nav2, SLAM (GLIM, DLIO), Behavior Trees, MPPI
 
-#strong[Language Fluency:] Intermediate high in English (TOEIC 810, OPIc IH), Native in Korean
+#strong[Simulation & RL:] MuJoCo, IsaacLab, PyTorch, mjlab
+
+#strong[Tools & Infrastructure:] Git, Docker, Jetson Orin, Ansible, Jenkins
+
+#strong[Language Fluency:] Intermediate-high English (TOEIC 810, OPIc IH), Native Korean
