@@ -21,8 +21,8 @@ cv:
   sections:
     summary:
       - bullet: Part-time PhD researcher (company-sponsored, Korea University) on VLM-based robot autonomy and RL for legged locomotion — building sim-to-real pipelines on FuRO with MuJoCo, mjlab, and CMA-ES-based parameter identification (PACE).
-      - bullet: Shipped end-to-end autonomy stack on Vision 60 (SLAM/GLIM, DLIO localization, Nav2+MPPI planning, Behavior Tree missions) as Robot-Intelligence Team Lead at KRM.
-      - bullet: 3 government-funded R&D programs (IITP, NIPA, defense cluster), 2 corresponding-author papers, 1 filed patent, and Ministry of National Defense Drone-Bot Challenge Grand Prize (2 consecutive years, 2023 & 2024).
+      - bullet: Shipped end-to-end autonomy stack on the Vision 60 quadruped robot (SLAM/GLIM, DLIO localization, Nav2+MPPI planning, Behavior Tree missions) as Robot-Intelligence Team Lead at KRM.
+      - bullet: 4 government-funded R&D programs (IITP, NIPA, KOITA, defense cluster), 2 corresponding-author papers, 1 filed patent, and Ministry of National Defense Drone-Bot Challenge Grand Prize (2 consecutive years, 2023 & 2024).
 
     experience:
       - company: "[Korea Robot Manufacturing](https://www.krm.co.kr/)"
@@ -30,11 +30,11 @@ cv:
         start_date: 2023-05
         end_date: present
         highlights:
-          - Led 3-5 engineers on autonomous navigation for quadruped robots (Vision 60)
+          - Led 5 engineers on autonomous navigation for quadruped robots (Vision 60)
           - Deployed full autonomy stack on Jetson Orin / ROS 2 — GLIM (SLAM), DLIO (localization), Nav2+MPPI (planning), Behavior Tree (missions)
-          - Designed ROUTE — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
+          - Designed ROUTE solution — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
           - Built PACE (Parameter Actuator Calibration Engine) for MuJoCo sim-to-real transfer. Joint dynamics error under 5% NRMSE via CMA-ES
-          - Contributed to 3 government-funded R&D projects (IITP, NIPA, defense cluster)
+          - Contributed to 4 government-funded R&D projects (IITP, NIPA, KOITA, defense cluster)
 
       - company: "[Korea Institute of Science and Technology](https://www.kist.re.kr/)"
         position: Student Researcher
@@ -64,7 +64,7 @@ cv:
         location: Daejeon, South Korea
         summary: "[Scalable Graphics, Vision, and Robotics Lab](https://sgvr.kaist.ac.kr/) (Advisor: Prof. Sung-eui Yoon)"
         highlights:
-          - "Focus: Reinforcement Learning, Deep Learning, Intelligent Robotics"
+          - "Focus: Reinforcement Learning, Deep Learning, Trajectory Optimization"
 
       - institution: Kwangwoon University
         area: Division of Robotics
@@ -134,24 +134,23 @@ cv:
           - PACE pipeline identifies 6 physics parameters (armature, damping, frictionloss, kp, kd, latency) from 1kHz real robot data using CMA-ES
           - Set up mjlab-based RL training environment on top of PACE-calibrated dynamics for sim-to-real transfer
 
-      - name: Quadrupedal Robot System for Defense Monitoring and Reconnaissance
+      - name: Quadruped Robot System for Defense Monitoring and Reconnaissance
         start_date: 2021-03
         end_date: 2023-01
         location: Agency for Defense Development (ADD)
-        summary: National defense research project (KAIST MS thesis)
+        summary: National defense research project
         highlights:
           - Used deep learning to generate initial trajectories for optimization, 100x faster than prior approach
 
     activities:
       - name: Auturbo
         start_date: 2023-03
-        end_date: present
-        summary: Quadruped Robot Team Leader (Mar 2024 – present), Regular Member (Mar 2023 – Dec 2023)
+        end_date: 2024-12
+        summary: Quadruped Robot Team Leader (Mar 2024 – Dec 2024), Regular Member (Mar 2023 – Dec 2023)
         highlights:
           - "Building [StrideSim](https://github.com/AuTURBO/StrideSim), a quadruped robot simulation platform on IsaacSim"
 
     honors:
-      - bullet: Military Robotics Society Excellence Award (Dec 2025)
       - bullet: Military Robotics Society Excellence Poster Award (Nov 2024)
       - bullet: "Ministry of National Defense Drone-Bot Challenge: Grand Prize, 2 consecutive years (2023, 2024)"
       - bullet: Dean's List (2020, 2019, 2018)
@@ -170,7 +169,7 @@ cv:
 
 
 settings:
-  current_date: '2026-04-17'
+  current_date: '2026-04-20'
   render_command:
     design: ./design.yaml
     locale: ./locale.yaml

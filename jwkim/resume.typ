@@ -81,7 +81,7 @@
   date: datetime(
     year: 2026,
     month: 4,
-    day: 17,
+    day: 20,
   ),
 )
 
@@ -105,9 +105,9 @@
 
 - Part-time PhD researcher (company-sponsored, Korea University) on VLM-based robot autonomy and RL for legged locomotion — building sim-to-real pipelines on FuRO with MuJoCo, mjlab, and CMA-ES-based parameter identification (PACE).
 
-- Shipped end-to-end autonomy stack on Vision 60 (SLAM\/GLIM, DLIO localization, Nav2+MPPI planning, Behavior Tree missions) as Robot-Intelligence Team Lead at KRM.
+- Shipped end-to-end autonomy stack on the Vision 60 quadruped robot (SLAM\/GLIM, DLIO localization, Nav2+MPPI planning, Behavior Tree missions) as Robot-Intelligence Team Lead at KRM.
 
-- 3 government-funded R&D programs (IITP, NIPA, defense cluster), 2 corresponding-author papers, 1 filed patent, and Ministry of National Defense Drone-Bot Challenge Grand Prize (2 consecutive years, 2023 & 2024).
+- 4 government-funded R&D programs (IITP, NIPA, KOITA, defense cluster), 2 corresponding-author papers, 1 filed patent, and Ministry of National Defense Drone-Bot Challenge Grand Prize (2 consecutive years, 2023 & 2024).
 
 == Experience
 
@@ -115,15 +115,15 @@
   [
     #strong[#link("https://www.krm.co.kr/")[Korea Robot Manufacturing]], Robotics Engineer (Robot-Intelligence Team Lead)
 
-    - Led 3-5 engineers on autonomous navigation for quadruped robots (Vision 60)
+    - Led 5 engineers on autonomous navigation for quadruped robots (Vision 60)
 
     - Deployed full autonomy stack on Jetson Orin \/ ROS 2 — GLIM (SLAM), DLIO (localization), Nav2+MPPI (planning), Behavior Tree (missions)
 
-    - Designed ROUTE — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
+    - Designed ROUTE solution — graph-based patrol mission system with plugin architecture (PTZ, docking, gait switching)
 
     - Built PACE (Parameter Actuator Calibration Engine) for MuJoCo sim-to-real transfer. Joint dynamics error under 5\% NRMSE via CMA-ES
 
-    - Contributed to 3 government-funded R&D projects (IITP, NIPA, defense cluster)
+    - Contributed to 4 government-funded R&D projects (IITP, NIPA, KOITA, defense cluster)
 
   ],
   [
@@ -185,7 +185,7 @@
 
     #summary[#link("https://sgvr.kaist.ac.kr/")[Scalable Graphics, Vision, and Robotics Lab] (Advisor: Prof. Sung-eui Yoon)]
 
-    - Focus: Reinforcement Learning, Deep Learning, Intelligent Robotics
+    - Focus: Reinforcement Learning, Deep Learning, Trajectory Optimization
 
   ],
   [
@@ -315,9 +315,9 @@
 
 #regular-entry(
   [
-    #strong[Quadrupedal Robot System for Defense Monitoring and Reconnaissance]
+    #strong[Quadruped Robot System for Defense Monitoring and Reconnaissance]
 
-    #summary[National defense research project (KAIST MS thesis)]
+    #summary[National defense research project]
 
     - Used deep learning to generate initial trajectories for optimization, 100x faster than prior approach
 
@@ -336,20 +336,18 @@
   [
     #strong[Auturbo]
 
-    #summary[Quadruped Robot Team Leader (Mar 2024 – present), Regular Member (Mar 2023 – Dec 2023)]
+    #summary[Quadruped Robot Team Leader (Mar 2024 – Dec 2024), Regular Member (Mar 2023 – Dec 2023)]
 
     - Building #link("https://github.com/AuTURBO/StrideSim")[StrideSim], a quadruped robot simulation platform on IsaacSim
 
   ],
   [
-    Mar 2023 – present
+    Mar 2023 – Dec 2024
 
   ],
 )
 
 == Honors
-
-- Military Robotics Society Excellence Award (Dec 2025)
 
 - Military Robotics Society Excellence Poster Award (Nov 2024)
 
