@@ -209,7 +209,7 @@
   [
     Seoul, South Korea
 
-    Mar 2017 – Feb 2021
+    Mar 2015 – Feb 2021
 
   ],
   degree-column: [
